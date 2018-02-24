@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curtain Call</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Meddon" rel="stylesheet">
+
+    <!-- JQuery CDN -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Foundation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
+    <!-- Font Awesome CSS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!-- File CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="hover-underline-menu" data-menu-underline-from-center>
+        <ul class="menu align-center">
+            <li><img src="assets/dice2.png" id="icon" /></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Donate</a></li>
+        </ul>
+    </nav>
+    <div class="row" id="header">
+        <h1 id="header"><img src="assets/tonberry4.png" id="tonberry"/> Tonberry
+        <hr>
+        </h1>
+    </div>
+    <div class="large-6 columns">
+        <div class="translucent-form-overlay">
+            <form>
+                <h3>Defeat Your Adversary</h3>
+                <div class="row columns">
+                    <label>Keyword
+                        <input type="text" name="keyword" placeholder="Any">
+                    </label>
+                </div>
+                <div class="row columns">
+                    <label>Adversary Name
+                        <input type="text" name="keyword" placeholder="Adversary">
+                    </label>
+                </div>
+                <div class="row columns">
+                    <label>Enemy Skill Level
+                        <select name="status" type="text">
+                            <option>Select</option>
+                            <option value="Adds">Adds</option>
+                            <option value="Mini-Boss">Mini-Boss</option>
+                            <option value="Mid-Boss">Mid-Boss</option>
+                            <option value="Final Boss">Final Boss</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="row columns">
+                    <label>Game of Origin
+                        <input type="text" name="location" placeholder="Game">
+                    </label>
+                </div>
+                <button type="button" class="primary button expanded search-button">
+                    Search
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="large-6 columns" id="key">
+        <h3 id="keyTitle">Key</h3>
+        <ul id="keyValues">
+            <li><span>Adds:</span> Lower-level enemy whose strength is in numbers. Occasionally difficult, but rarely in the same sense as the higher tiers.</li>
+            <br>
+            <li><span>Mini-Boss:</span> A sturdier, more dangerous enemy. a good example is Shadow Link in The Legend of Zelda.</li>
+            <br>
+            <li><span>Mid-Boss:</span> A truly serious enemy, occasionally more difficult to defeat than a games' actual Final Boss. Death in Castlevania exemplifies the type.</li>
+            <br>
+            <li><span>Final Boss:</span> The apex of opponent difficulty. Typified by bosses such as Skolas from Destiny.</li>
+        </ul>
+    </div>
+    <footer>
+        <div class="wrap row small-up-1 medium-up-3">
+            <div class="column">
+                <h4>Social Media</h4>
+                <hr>
+                <a href="#"><i class="fab fa-facebook-square" id="facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram" id="instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-twitter-square" id="twitter"></i></a>
+                <a href="#"><i class="fab fa-github-square" id="github"></i></a>
+            </div>
+            <div class="column">
+                <h4>Contact Us</h4>
+                <hr>
+                <a href="mailto:inconspicuous.tonberry@gmail.com"><i class="far fa-envelope" id="mail"></i></a>
+            </div>
+            <div class="column" id="store">
+                <h4>Store</h4>
+                <hr>
+                <a href="#"><i class="fas fa-cart-plus" id="shop"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Foundation JS -->
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
+    <!-- File JS -->
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+/* Navbar */
+#icon {
+  margin-left: 10px;
+  height: 30px;
+  width: 30px;
+}
+.hover-underline-menu {
+  width: 100%;
+}
+
+.hover-underline-menu .menu {
+  background-color: black;
+}
+
+.hover-underline-menu .menu a {
+  color: #fefefe;
+  padding: .8rem 1rem;
+}
+
+.hover-underline-menu .menu .underline-from-center {
+  position: relative;
+}
+
+.hover-underline-menu .menu .underline-from-center::after {
+  content: "";
+  position: absolute;
+  top: calc(100% - 0.125rem);
+  border-bottom: 0.25rem solid #fefefe;
+  left: 50%;
+  right: 50%;
+  transition: all 0.5s ease;
+}
+
+.hover-underline-menu .menu .underline-from-center:hover::after {
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease;
+}
+/*Header*/
+
+#header {
+    color: white;
+    font-family: "Meddon", cursive;
+    margin: 10px;
+}
+
+#tonberry {
+    width: 1.9em;
+    height: 2.85em;
+}
+
+
+body {
+    background: url("https://s-media-cache-ak0.pinimg.com/originals/9a/14/87/9a1487d9c9e04c46789b25200025f839.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Translucent Questionaire */
+
+.translucent-form-overlay {
+    max-width: 500px;
+    width: 100%;
+    background-color: rgba(54, 54, 54, 0.8);
+    padding: 20px;
+    color: #fefefe;
+    margin-top: 10px;
+    box-shadow: 0 -5px 5px -5px white;
+    margin-bottom: 50px;
+}
+
+.translucent-form-overlay .columns.row {
+    display: block;
+}
+
+.translucent-form-overlay h3,
+.translucent-form-overlay label {
+    color: #fefefe;
+}
+
+.translucent-form-overlay input,
+.translucent-form-overlay select {
+    color: #8a8a8a;
+}
+
+.translucent-form-overlay input::-webkit-input-placeholder {
+    color: #8a8a8a;
+}
+
+.translucent-form-overlay input:-ms-input-placeholder {
+    color: #8a8a8a;
+}
+
+.translucent-form-overlay input::placeholder {
+    color: #8a8a8a;
+}
+
+
+/* Key */
+
+#key {
+    max-width: 600px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: rgba(54, 54, 54, 0.8);
+    padding: 20px;
+    box-shadow: 0 -5px 5px -5px white;
+    border-radius: 2px;
+    /*margin: 2px;*/
+}
+#keyTitle {
+    /*padding-left: 20px;
+    font-family: 'Zilla Slab Highlight', cursive;*/
+}
+#keyValue/*s {
+    font-family: 'Zilla Slab Highlight', cursive;*/
+    list-style: none;
+}
+span {
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+/* Footer */
+
+footer {
+    /*margin-left: 140px;*/
+    margin-top: 50px;
+    padding: 10px;
+    color: white;
+    height: 340px;
+    display: block;
+    padding-bottom: 50px;
+}
+
+h4 {
+    text-align: left;
+}
+
+#facebook {
+    padding: 5px;
+    font-size: 5em;
+    color: #3b5998;
+}
+
+#instagram {
+    padding: 5px;
+    font-size: 5em;
+    color: #fb3983;
+}
+
+#twitter {
+    padding: 5px;
+    font-size: 5em;
+    color: #00aced;
+}
+
+#github {
+    padding: 5px;
+    font-size: 5em;
+    color: #eeeeee;
+}
+
+#mail {
+    align-self: center;
+    padding: 5px;
+    font-size: 5em;
+    color: #eeeeee;
+}
+
+#shop {
+    padding: 5px;
+    font-size: 5em;
+    color: #eeeeee;
+}
+#store {
+    margin-bottom: 20px;
+}
+/*Blue Highlight on Text Input*/
+
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 2px solid rgba(81, 203, 238, 1);
+}
+/*Hover effects on glyphs*/
+#facebook:hover, #instagram:hover, #twitter:hover, #github:hover, #mail:hover, #shop:hover {
+    -webkit-transform: scale(1.3);
+}
