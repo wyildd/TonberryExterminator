@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS `creatures`;
+CREATE DATABASE `creatures`;
