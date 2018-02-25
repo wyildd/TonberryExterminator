@@ -114,8 +114,7 @@ body {
     /*padding-left: 20px;
     font-family: 'Zilla Slab Highlight', cursive;*/
 }
-#keyValue/*s {
-    font-family: 'Zilla Slab Highlight', cursive;*/
+#keyValues {
     list-style: none;
 }
 span {
