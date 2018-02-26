@@ -1,4 +1,5 @@
 /* Navbar */
+
 #icon {
   margin-left: 10px;
   height: 30px;
@@ -36,6 +37,7 @@
   right: 0;
   transition: all 0.5s ease;
 }
+
 /*Header*/
 
 #header {
@@ -135,6 +137,7 @@ footer {
 
 h4 {
     text-align: left;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #facebook {
