@@ -147,7 +147,7 @@ footer {
 
 h4 {
     text-align: left;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 #facebook {
@@ -265,14 +265,14 @@ input[type=text]:focus, textarea:focus {
   font-size: 3.5em; 
 }
 #mainDivTitle, #mainDivTitle2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   /*font-family: "Dosis", sans-serif;*/
 }
 
 .bioBlurb {
   margin-top: 20px;
   font-weight: bolder;
- font-family: 'Montserrat', sans-serif;
+ font-family: "Montserrat", sans-serif;
 }
 .color:hover {
   background: #88a7db;
@@ -280,4 +280,16 @@ input[type=text]:focus, textarea:focus {
 /*Mission Page*/
 #missionParam {
   font-size: 1.5em;
+}
+
+/*Add Page*/
+.addPage {
+  color: white;
+  font-size: 1.5em;
+}
+#interloper {
+   background-color: rgba(54, 54, 54, 0.8);
+   border-radius: 3px;
+   box-shadow: 0 -5px 5px -5px white;
+   font-family: "Montserrat", sans-serif;
 }
