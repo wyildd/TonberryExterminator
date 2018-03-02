@@ -29,19 +29,17 @@ $(document).ready(function() {
     console.log(newEnemies)
 
 
-  // Submits a new post and brings user to blog page upon completion
   function submitEnemies(Enemies) {
     $.post("/api/enemies/", Enemies, function() {
       window.location.href = "/list";
     });
   }
 
-  // Gets post data for a post if we're editing
+  
   function getPostData(id) {
     $.get("/api/enemies/" + id, function(data) {
       if (data) {
-        // If this post exists, prefill our cms forms with its data
-        nameInput.val(data.name);
+       
         originInput.val(data.origin);
         strategyInput.val(data.strategy);
         postDifficultySelect.val(data.difficulty);
