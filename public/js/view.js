@@ -1,8 +1,11 @@
 $(document).ready(function() {
     
-  function getEnemies(result) {
-    
-    $.get("/api/enemies" + result, function(data) {
+  function getEnemies(difficulty) {
+    var difficultyString = difficulty || "";
+    if (difficultyString) {
+      difficultyString = "/difficulty/" + difficultyString;
+    }
+    $.get("/api/enemies" + difficultyString, function(data) {
       console.log("Enemies", data);
       enemies = data;
       if (!enemies || !enemies.length) {
@@ -40,7 +43,7 @@ $(document).ready(function() {
     newEnemiesPanelHeading.addClass("panel-heading");
     var viewBtn = $("<button>");
     viewBtn.text("VIEW");
-    viewBtn.addClass("view btn btn-default");
+    viewBtn.addClass("view buttonn button-default");
     var newEnemiesName = $("<h4>");
     var newEnemiesOrigin = $("<h4>");
     var newEnemiesDifficulty = $("<p>");
@@ -71,5 +74,13 @@ $(document).ready(function() {
       .parent()
       .data("enemies")
     window.location.href = "/specific?enemies_id=" + currentEnemies.id
+    $.get("/api/enemies/id" + currentEnemies.id, function(data) {
+      console.log("Enemies", data);
+      target = data
+    $('#monsters').text(target.name)
+    $('#origin').text(target.origin)
+    $('#strategy').text(target.strategy)
+    $('#difficulty').text(target.difficulty)
+  })
   }
 });

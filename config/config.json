@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": null,
+    "password": "esper101",
     "database": "creatures",
     "host": "localhost",
     "dialect": "mysql"

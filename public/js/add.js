@@ -1,10 +1,12 @@
 $(document).ready(function() {
+  console.log("does it work?")
   var url = window.location.search;
-  var postId;
+  var enemiesId;
+   
 
-  if (url.indexOf("?post_id=") !== -1) {
-    postId = url.split("=")[1];
-    getPostData(postId);
+  if (url.indexOf("?enemies_id=") !== -1) {
+    enemisdId = url.split("=")[1];
+    getEnemieData(enemiesId);
   }
 
   var nameInput = $("#name");
@@ -25,13 +27,13 @@ $(document).ready(function() {
       strategy: strategyInput.val().trim(),
       difficulty: postDifficultySelect.val()
     };
-    submitEnemies(newEnemies);
     console.log(newEnemies)
-
-
+    submitEnemies(newEnemies)
+  })
+  
   function submitEnemies(Enemies) {
     $.post("/api/enemies/", Enemies, function() {
-      window.location.href = "/list";
+      window.location.href = "/";
     });
   }
 
@@ -40,11 +42,13 @@ $(document).ready(function() {
     $.get("/api/enemies/" + id, function(data) {
       if (data) {
        
+        nameInput.val(data.name);
         originInput.val(data.origin);
         strategyInput.val(data.strategy);
         postDifficultySelect.val(data.difficulty);
+        
       }
     });
-  }
-
+  };
+})
 
