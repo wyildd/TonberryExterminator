@@ -73,6 +73,6 @@ $(document).ready(function() {
       .parent()
       .parent()
       .data("enemies")
-    window.location.href = "/add?enemies_id=" + currentEnemies.id
+    window.location.href = "/specific?enemies_id=" + currentEnemies.id
   }
 });
