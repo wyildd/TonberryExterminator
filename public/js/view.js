@@ -73,14 +73,6 @@ $(document).ready(function() {
       .parent()
       .parent()
       .data("enemies")
-    window.location.href = "/specific?enemies_id=" + currentEnemies.id
-    $.get("/api/enemies/id" + currentEnemies.id, function(data) {
-      console.log("Enemies", data);
-      target = data
-    $('#monsters').text(target.name)
-    $('#origin').text(target.origin)
-    $('#strategy').text(target.strategy)
-    $('#difficulty').text(target.difficulty)
-  })
+    window.location.href = "/add?enemies_id=" + currentEnemies.id
   }
 });
