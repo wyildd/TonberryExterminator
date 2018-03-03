@@ -28,7 +28,7 @@
         </ul>
     </nav>
     <div class="row" id="header">
-        <h1 id="header" id="monster"><a href="index.html"><img src="assets/tonberry4.png" id="tonberry"/></a>  Tonberry
+        <h1 class="name" id="header" id="monster"><a href="index.html"><img src="assets/tonberry4.png" id="tonberry"/></a>  Tonberry
         <hr>
         </h1>
     </div>
@@ -70,7 +70,51 @@
     <script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
     <!-- File JS -->
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/result.js"></script>
+<!--     <script type="text/javascript" src="js/result.js"></script> -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        function getEnemyData(enemyId) {
+            $.ajax({
+              method: "GET",
+              url: "/api/enemies/" + enemyId
+            })
+            .then(function(res) {
+                // console.log(res)
+                $(".name").empty()
+                $(".name").text(res.name)
+                $("#origin").text(res.origin)
+                $("#strategy").text(res.strategy)
+                $("#difficulty").text(res.difficulty)
+            })
+         }
+
+         console.log(window.location.href)
+
+         let url = window.location.href;
+
+         function initialLoadEnemy () {
+             let queryParams = url.split('?');
+             console.log(queryParams);
+             if (queryParams.length > 1) {
+                let queries = queryParams[1];
+                console.log(queries);
+                let map = queries.split('=');
+                console.log(map)
+                for (let i = 0; i < map.length; i++) {
+                    if (map[i] === 'enemies_id') {
+                        console.log(map[i])
+                        return getEnemyData(map[i + 1]);
+                    } else {
+                        continue;
+                    }
+                }
+             }
+         }
+
+         initialLoadEnemy()
+            
+ })
+    </script>
 </body>
 
 </html>
