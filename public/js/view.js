@@ -44,8 +44,8 @@ $(document).ready(function() {
     var viewBtn = $("<button>");
     viewBtn.text("VIEW");
     viewBtn.addClass("view buttonn button-default");
-    var newEnemiesName = $("<h4>");
-    var newEnemiesOrigin = $("<h4>");
+    var newEnemiesName = $("<h3>");
+    var newEnemiesOrigin = $("<h3>");
     var newEnemiesDifficulty = $("<p>");
     newEnemiesDifficulty.text(enemies.difficulty);
     newEnemiesDifficulty.css({
@@ -58,6 +58,9 @@ $(document).ready(function() {
     newEnemiesPanelBody.addClass("panel-body");
     var newEnemiesBody = $("<p>");
     newEnemiesName.text("Name: " + enemies.name + " | Game of Origin: " + enemies.origin + " | Difficulty: " + enemies.difficulty);
+    newEnemiesName.css({
+      float: "center",
+    });
     newEnemiesPanelHeading.append(newEnemiesName);
     newEnemiesPanelHeading.append(newEnemiesOrigin);
     newEnemiesPanelBody.append(newEnemiesBody);
