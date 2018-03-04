@@ -292,4 +292,6 @@ input[type=text]:focus, textarea:focus {
    border-radius: 3px;
    box-shadow: 0 -5px 5px -5px white;
    font-family: "Montserrat", sans-serif;
+   margin-bottom: 30px;
 }
+
