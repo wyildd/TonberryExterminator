@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Meddon" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- JQuery CDN -->
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- Foundation CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
     <!-- Font Awesome CSS -->
@@ -20,9 +20,9 @@
 <body>
     <nav class="hover-underline-menu" data-menu-underline-from-center>
         <ul class="menu align-center">
-            <li><img src="assets/dice2.png" id="icon" /></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="mission.html">Mission</a></li>
+            <li><img src="assets/dice2.png" id="icon" /><a href="/"></a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/mission">Mission</a></li>
             <li><a href="https://www.redbubble.com/people/incon?asc=u">Merchandise</a></li>
             <li><a href="/add">Create</a></li>
         </ul>
@@ -34,11 +34,11 @@
     </div>
     <!-- Search Bar -->
         <div class="row" id="themain">
-            <input type="search" name="search" placeholder="Select Opponent..." class="animated-search-form">
+            <input type="search" name="search" placeholder="Select Opponent..." class="animated-search-form" id = "difficulty">
         </div>
     <!-- Content Div -->
     <div class="row fullWidth">
-        <div class="large-12 columns" id="mainContent">
+        <div class="large-12 columns mobcage" id="mainContent">
             <h1 id="mainDivTitle">Main content populates here.</h1>
             <p id="mainDivContent">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
         </div>
@@ -69,6 +69,7 @@
     <script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
     <!-- File JS -->
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/view.js"></script>
 </body>
 
 </html>
